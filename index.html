@@ -65,7 +65,7 @@
       border-bottom: 1px solid #f1f3f4;
     }
     .student-row:last-child { border-bottom: none; }
-    .col-header { font-size: 12px; font-weight: 600; color: var(--text-sub); margin-bottom: 6px; text-transform: none; }
+    .col-header { font-size: 12px; font-weight: 600; color: var(--text-sub); margin-bottom: 6px; text-transform: uppercase; }
     .student-name-field { font-weight: 500; font-size: 14px; color: #3c4043; }
     
     /* Opciones Radio en línea */
@@ -182,18 +182,18 @@
     row.className = "student-row";
     row.innerHTML = `
       <div>
-        <div class="col-header">Nombre</div>
+        <div class="col-header">Estudiante</div>
         <div class="student-name-field">${student}</div>
       </div>
       <div>
-        <div class="col-header">Asistencia</div>
+        <div class="col-header">Título</div>
         <div class="radio-group">
           <label class="radio-item"><input type="radio" name="titulo_${index}" value="A" required> A</label>
           <label class="radio-item"><input type="radio" name="titulo_${index}" value="P"> P</label>
         </div>
       </div>
       <div>
-        <div class="col-header">Nivel</div>
+        <div class="col-header">Asistencia</div>
         <div class="radio-group">
           <label class="radio-item"><input type="radio" name="asistencia_${index}" value="0" required> 0</label>
           <label class="radio-item"><input type="radio" name="asistencia_${index}" value="1"> 1</label>
